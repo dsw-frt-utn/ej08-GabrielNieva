@@ -20,6 +20,13 @@
 
             string resumen2 = p2.CrearResumenVenta(303, "Coca-Cola", 0, 450m);
             Console.WriteLine("Problema 2 (con cantidad 0): " + resumen2);
+
+            //Problema 3
+
+            var p3 = new Problema3();
+            var miProducto = new Product("Producto original");
+            string res3 = p3.ComprarCopias(5, miProducto);
+            Console.WriteLine("Problema 3: " + res3);
         }
     }
 }
