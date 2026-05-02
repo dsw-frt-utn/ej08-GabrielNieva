@@ -36,6 +36,13 @@
             Console.WriteLine("Problema 4 (null,null,null): " + p4.CalcularPromedio(null, null, null));
             Console.WriteLine("Problema 4 (5,15,9): " + p4.CalcularPromedio(5, 15, 9));
 
+            //Problema 5
+            var p5 = new Problema5();
+            Sale minorista = new RetailSale(1000m);
+            Sale mayorista = new WholesaleSale(1000m);
+            Console.WriteLine("Importe Final Minorista: " + p5.ObtenerImporteFinal(minorista));
+            Console.WriteLine("Importe Final Mayorista (10% desc): " + p5.ObtenerImporteFinal(mayorista));
+
         }
     }
 }
