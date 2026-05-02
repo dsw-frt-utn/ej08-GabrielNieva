@@ -2,5 +2,5 @@
 # Desarrollo de Software
 ## Ejercicio N° 8
 
-##Nombre: Nieva, Gabriel Agustin
-##Legajo: 57792
+## Nombre: Nieva, Gabriel Agustin
+## Legajo: 57792
