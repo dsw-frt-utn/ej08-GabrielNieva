@@ -27,6 +27,15 @@
             var miProducto = new Product("Producto original");
             string res3 = p3.ComprarCopias(5, miProducto);
             Console.WriteLine("Problema 3: " + res3);
+
+            //Problema 4
+
+            var p4 = new Problema4();
+            Console.WriteLine("Problema 4 (7,8,9): " + p4.CalcularPromedio(7, 8, 9));
+            Console.WriteLine("Problema 4 (5,null,9): " + p4.CalcularPromedio(5, null, 9));
+            Console.WriteLine("Problema 4 (null,null,null): " + p4.CalcularPromedio(null, null, null));
+            Console.WriteLine("Problema 4 (5,15,9): " + p4.CalcularPromedio(5, 15, 9));
+
         }
     }
 }
