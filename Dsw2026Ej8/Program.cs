@@ -19,7 +19,7 @@
             Console.WriteLine("Problema 2: " + resumen);
 
             string resumen2 = p2.CrearResumenVenta(303, "Coca-Cola", 0, 450m);
-            Console.WriteLine("Problema 2 (con cantidad 0): " + resumen2);
+            Console.WriteLine("Problema 2: (con cantidad 0): " + resumen2);
 
             //Problema 3
 
@@ -31,18 +31,25 @@
             //Problema 4
 
             var p4 = new Problema4();
-            Console.WriteLine("Problema 4 (7,8,9): " + p4.CalcularPromedio(7, 8, 9));
-            Console.WriteLine("Problema 4 (5,null,9): " + p4.CalcularPromedio(5, null, 9));
-            Console.WriteLine("Problema 4 (null,null,null): " + p4.CalcularPromedio(null, null, null));
-            Console.WriteLine("Problema 4 (5,15,9): " + p4.CalcularPromedio(5, 15, 9));
+            Console.WriteLine("Problema 4: (7,8,9): " + p4.CalcularPromedio(7, 8, 9));
+            Console.WriteLine("Problema 4: (5,null,9): " + p4.CalcularPromedio(5, null, 9));
+            Console.WriteLine("Problema 4: (null,null,null): " + p4.CalcularPromedio(null, null, null));
+            Console.WriteLine("Problema 4: (5,15,9): " + p4.CalcularPromedio(5, 15, 9));
 
             //Problema 5
+
             var p5 = new Problema5();
             Sale minorista = new RetailSale(1000m);
             Sale mayorista = new WholesaleSale(1000m);
             Console.WriteLine("Importe Final Minorista: " + p5.ObtenerImporteFinal(minorista));
             Console.WriteLine("Importe Final Mayorista (10% desc): " + p5.ObtenerImporteFinal(mayorista));
 
+            //Problema 6
+
+            var p6 = new Problema6();
+            Console.WriteLine("Problema 6: (ab 123 x ): " + p6.NormalizarCodigoProducto("ab 123 x "));
+            string nulo = null;
+            Console.WriteLine("Problema 6: (null): " + p6.NormalizarCodigoProducto(nulo));
         }
     }
 }
